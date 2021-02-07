@@ -1,0 +1,54 @@
+{
+  "auth": {
+    "email": "Email",
+    "login": "Log In",
+    "loginSentence": "Already with us? You may Log In.",
+    "logout": "Sign Out",
+    "name": "Name",
+    "password": "Password",
+    "register": {
+      "EmailAlreadyUsed": "We are Sorry, but this Email is Already Used.",
+      "PasswordLessThen6": "Please Use Password Not Less Then 6 Characters.",
+      "register": "Join"
+    },
+    "registerSentence": "Not with us? You may Create New Account."
+  },
+  "dashboard": {
+    "hint": "Hint",
+    "prompt": "Buttons are clickable"
+  },
+  "editing": "Editing",
+  "error": {
+    "messages": {
+      "500": "Internal Server Error"
+    }
+  },
+  "errors": {
+    "messages": {
+      "401": "Failed to log in. Please Make sure that you have Entered your Login and Password Correctly. "
+    }
+  },
+  "forms": {
+    "add": "Add Form",
+    "all": "All Forms",
+    "form": "Form"
+  },
+  "home": {
+    "message": "Now you may",
+    "status": "You are in home page.",
+    "try": "Or try it right now"
+  },
+  "or": "or",
+  "tables": {
+    "all": "All Tables"
+  },
+  "watching": "Watching",
+  "week": {
+    "Friday": "Friday",
+    "Monday": "Monday",
+    "Saturday": "Saturday",
+    "Thursday": "Thursday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday"
+  }
+}
