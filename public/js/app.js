@@ -3974,8 +3974,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   methods: {
     setLocale: function setLocale(locale) {
@@ -4281,14 +4279,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -4778,7 +4768,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Jetstream_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Jetstream/Navbar */ "./resources/js/Jetstream/Navbar.vue");
+/* harmony import */ var _Jetstream_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Jetstream/Navbar.vue */ "./resources/js/Jetstream/Navbar.vue");
 /* harmony import */ var _Jetstream_Foo_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Jetstream/Foo.vue */ "./resources/js/Jetstream/Foo.vue");
 //
 //
@@ -4793,7 +4783,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     Foo: _Jetstream_Foo_vue__WEBPACK_IMPORTED_MODULE_1__.default,
-    Navbar: _Jetstream_Navbar__WEBPACK_IMPORTED_MODULE_0__.default
+    Navbar: _Jetstream_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__.default
   }
 });
 
@@ -7134,7 +7124,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_DefaultTemp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Layouts/DefaultTemp */ "./resources/js/Layouts/DefaultTemp.vue");
-/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../helpers */ "./resources/js/helpers.js");
 //
 //
 //
@@ -7163,8 +7152,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-
+ //import { authComputed } from "../helpers";
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -7208,8 +7196,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue */ "./node_modules/@inertiajs/inertia-vue/dist/index.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./i18n */ "./resources/js/i18n.js");
 /* harmony import */ var portal_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! portal-vue */ "./node_modules/portal-vue/dist/portal-vue.common.js");
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Import modules...
-
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
@@ -7222,6 +7209,7 @@ vue__WEBPACK_IMPORTED_MODULE_3__.default.mixin({
 });
 vue__WEBPACK_IMPORTED_MODULE_3__.default.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.plugin);
 vue__WEBPACK_IMPORTED_MODULE_3__.default.use(portal_vue__WEBPACK_IMPORTED_MODULE_2__.default);
+vue__WEBPACK_IMPORTED_MODULE_3__.default.use(_i18n__WEBPACK_IMPORTED_MODULE_1__.default);
 var app = document.getElementById('app');
 new vue__WEBPACK_IMPORTED_MODULE_3__.default({
   render: function render(h) {
@@ -7484,7 +7472,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#nav[data-v-f3ba9578] {\n  display: flex;\n  align-items: center;\n  min-height: 50px;\n  padding: 0.2em 1em;\n  background: radial-gradient(circle farthest-corner at 4.7% 14%, #30e198 0%, #097be2 90%);\n}\n.nav-welcome[data-v-f3ba9578] {\n  margin-left: auto;\n  margin-right: 1rem;\n  color: white;\n}\na[data-v-f3ba9578] {\n  font-weight: bold;\n  color: #2c3e50;\n  margin: auto 0.8em auto 0.4em;\n  text-decoration: none;\n  border-top: 2px solid transparent;\n}\n.router-lint-exact-active[data-v-f3ba9578] {\n  color: white;\n  border-bottom: 2px solid #fff;\n}\nbutton[data-v-f3ba9578],\n.btn[data-v-f3ba9578] {\n  margin-left: auto;\n  background: white;\n  text-decoration: none;\n  color: #2c3e50;\n@apply rounded-full p-1 m-1 inline-block;\n}\nbutton.router-link-active[data-v-f3ba9578],\n.btn.router-link-active[data-v-f3ba9578] {\n  color: #2c3e50;\n}\n.logoutButton[data-v-f3ba9578] {\n  cursor: pointer;\n}\n.nav-welcome + button[data-v-f3ba9578] {\n  margin-left: 0;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "#nav[data-v-f3ba9578] {\n  display: flex;\n  align-items: center;\n  min-height: 50px;\n  background: radial-gradient(circle farthest-corner at 4.7% 14%, #30e198 0%, #097be2 90%);\n}\n.nav-welcome[data-v-f3ba9578] {\n  margin-left: auto;\n  margin-right: 1rem;\n  color: white;\n}\na[data-v-f3ba9578] {\n  font-weight: bold;\n  color: #2c3e50;\n  margin: auto 0.8em auto 0.4em;\n  text-decoration: none;\n  border-top: 2px solid transparent;\n}\n.router-lint-exact-active[data-v-f3ba9578] {\n  color: white;\n  border-bottom: 2px solid #fff;\n}\nbutton[data-v-f3ba9578],\n.btn[data-v-f3ba9578] {\n  margin-left: auto;\n  background: white;\n  text-decoration: none;\n  color: #2c3e50;\n@apply rounded-full p-1 m-1 inline-block;\n}\nbutton.router-link-active[data-v-f3ba9578],\n.btn.router-link-active[data-v-f3ba9578] {\n  color: #2c3e50;\n}\n.logoutButton[data-v-f3ba9578] {\n  cursor: pointer;\n}\n.nav-welcome + button[data-v-f3ba9578] {\n  margin-left: 0;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -35298,11 +35286,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("section", [
+  return _c(
+    "section",
+    { staticClass: "flex justify-center items-between  lg:mx-64" },
+    [
       _c(
         "button",
         {
+          staticClass: "lg:inline",
           on: {
             click: function($event) {
               return _vm.setLocale("en")
@@ -35315,6 +35306,7 @@ var render = function() {
       _c(
         "button",
         {
+          staticClass: "lg:inline",
           on: {
             click: function($event) {
               return _vm.setLocale("ru")
@@ -35327,6 +35319,7 @@ var render = function() {
       _c(
         "button",
         {
+          staticClass: "lg:inline",
           on: {
             click: function($event) {
               return _vm.setLocale("ba")
@@ -35339,6 +35332,7 @@ var render = function() {
       _c(
         "button",
         {
+          staticClass: "lg:inline",
           on: {
             click: function($event) {
               return _vm.setLocale("tat")
@@ -35347,8 +35341,8 @@ var render = function() {
         },
         [_vm._v("Татарча")]
       )
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -35698,54 +35692,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "rounded-full mb-2", attrs: { id: "nav" } }, [
-    _vm.notLoggedIn
-      ? _c("div", [
-          _c(
-            "button",
-            {
-              staticClass: "btn",
-              attrs: { type: "button" },
-              on: { click: _vm.login }
-            },
-            [_vm._v("\n      " + _vm._s(_vm.$t("auth.login")) + "\n    ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn",
-              attrs: { type: "button" },
-              on: { click: _vm.register }
-            },
-            [
-              _vm._v(
-                "\n      " + _vm._s(_vm.$t("auth.register.register")) + "\n    "
-              )
-            ]
-          )
-        ])
-      : _c("div", [
-          _c(
-            "button",
-            {
-              staticClass: "btn",
-              attrs: { type: "button" },
-              on: { click: _vm.goToDashboard }
-            },
-            [_vm._v("\n      " + _vm._s(_vm.$t("dashboard")) + "\n    ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "logoutButton btn",
-              attrs: { type: "button" },
-              on: { click: _vm.logout }
-            },
-            [_vm._v("\n      " + _vm._s(_vm.$t("auth.logout")) + "\n    ")]
-          )
-        ])
+  return _c("div", { staticClass: "rounded-full", attrs: { id: "nav" } }, [
+    _c("div", { staticClass: "pl-3 pb-1 flex justify-center items-center" }, [
+      _c("div", [
+        _c(
+          "button",
+          {
+            staticClass: "btn inline-block",
+            attrs: { type: "button" },
+            on: { click: _vm.login }
+          },
+          [_vm._v("Login")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn inline-block",
+            attrs: { type: "button" },
+            on: { click: _vm.register }
+          },
+          [_vm._v("Register")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn inline-block",
+            attrs: { type: "button" },
+            on: { click: _vm.goToDashboard }
+          },
+          [_vm._v("Dashboard")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "logoutButton inline-block btn",
+            attrs: { type: "button" },
+            on: { click: _vm.logout }
+          },
+          [_vm._v("Logout")]
+        )
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -36774,6 +36764,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "bg-gray-600" },
     [_c("Navbar"), _vm._v(" "), _vm._t("default"), _vm._v(" "), _c("Foo")],
     2
   )
@@ -40449,64 +40440,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c(
-        "DefaultTemp",
-        [
-          _vm.notLoggedIn
-            ? [
-                _c("div", { staticClass: "p-10 m-10" }, [
-                  _c("div", { staticClass: "text-gray-200 p-4 m-6" }, [
-                    _c("h1", [_vm._v(_vm._s(_vm.$t("home.status")))]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t" +
-                          _vm._s(_vm.$t("home.message")) +
-                          "\n\t\t\t\t\t\t"
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "button inline-block",
-                      attrs: { type: "button" },
-                      on: { click: _vm.login }
-                    },
-                    [
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(_vm.$t("auth.login")) +
-                          "\n          "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "text-gray-200 inline-block" }, [
-                    _vm._v(_vm._s(_vm.$t("or")))
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "button inline-block",
-                      attrs: { type: "button" },
-                      on: { click: _vm.register }
-                    },
-                    [
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(_vm.$t("auth.register.register")) +
-                          "\n          "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "m-24 p-2 block" }, [
+  return _c("DefaultTemp", [
+    _c(
+      "div",
+      { staticClass: "text-gray-200" },
+      [
+        _vm.notLoggedIn
+          ? [
+              _c(
+                "div",
+                {
+                  staticClass: "py-12  m-12  flex justify-center items-center"
+                },
+                [
+                  _c("div", [
+                    _vm._v("\n\t\t\t\t\tNow you may\n\t\t\t\t\t"),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button inline-block mx-2",
+                        attrs: { type: "button" },
+                        on: { click: _vm.login }
+                      },
+                      [_vm._v("\n\t\t\t\t\t\tLogin\n\t\t\t\t\t")]
+                    ),
+                    _vm._v(",\n\t\t\t\t\t"),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button inline-block mx-2",
+                        attrs: { type: "button" },
+                        on: { click: _vm.register }
+                      },
+                      [_vm._v("\n\t\t\t\t\t\tSign up\n\t\t\t\t\t")]
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "m-12 py-12 flex justify-center items-center" },
+                [
+                  _c("div", [
+                    _vm._v("\n\t\t\t\t\tYou may also  \n\t\t\t\t\t"),
                     _c(
                       "button",
                       {
@@ -40514,24 +40491,17 @@ var render = function() {
                         attrs: { type: "button" },
                         on: { click: _vm.dashboard }
                       },
-                      [
-                        _vm._v(
-                          "\n\t\t\t\t\t\t\t" +
-                            _vm._s(_vm.$t("home.try")) +
-                            "\n\t\t\t\t\t\t"
-                        )
-                      ]
+                      [_vm._v("\n\t\t\t\t\t\tTry \n\t\t\t\t\t")]
                     )
                   ])
-                ])
-              ]
-            : _vm._e()
-        ],
-        2
-      )
-    ],
-    1
-  )
+                ]
+              )
+            ]
+          : _vm._e()
+      ],
+      2
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

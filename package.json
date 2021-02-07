@@ -9,7 +9,7 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
-		"dependencies": {
+    "dependencies": {
         "@types/body-parser": "^1.19.0",
         "body-parser": "^1.15.2",
         "core-js": "^3.6.5",
@@ -23,7 +23,7 @@
         "vue-i18n": "^8.17.3",
         "vue-meta": "^2.4.0",
         "vuex": "^3.4.0"
-		},
+    },
     "devDependencies": {
         "@inertiajs/inertia": "^0.8.2",
         "@inertiajs/inertia-vue": "^0.5.4",
@@ -31,19 +31,19 @@
         "@tailwindcss/typography": "^0.3.0",
         "autoprefixer": "^10.0.2",
         "axios": "^0.21",
+        "cypress": "^6.4.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "portal-vue": "^2.1.7",
         "postcss": "^8.1.14",
         "postcss-import": "^12.0.1",
-        "tailwindcss": "^2.0.1",
-        "vue": "^2.5.17",
-        "vue-loader": "^15.9.6",
-        "vue-template-compiler": "^2.6.10",
-        "tailwindcss": "^1.9.6",
-        "vue-i18n": "^8.17.3",
         "sass": "^1.26.11",
         "sass-loader": "^9.0.3",
-        "typescript": "~3.9.3"
+        "tailwindcss": "^1.9.6",
+        "typescript": "~3.9.3",
+        "vue": "^2.5.17",
+        "vue-i18n": "^8.17.3",
+        "vue-loader": "^15.9.6",
+        "vue-template-compiler": "^2.6.10"
     }
 }

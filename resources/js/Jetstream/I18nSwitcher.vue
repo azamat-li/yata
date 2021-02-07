@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <section>
-      <button @click="setLocale('en')" >In English</button>
-      <button @click="setLocale('ru')">На Русском</button>
-      <button @click="setLocale('ba')">Башҡортса</button>
-      <button @click="setLocale('tat')">Татарча</button>
+    <section class="flex justify-center items-between  lg:mx-64">
+      <button @click="setLocale('en')" class="lg:inline" >In English</button>
+      <button @click="setLocale('ru')"  class="lg:inline">На Русском</button>
+      <button @click="setLocale('ba')"  class="lg:inline">Башҡортса</button>
+      <button @click="setLocale('tat')"  class="lg:inline">Татарча</button>
     </section>
-  </div>
 </template>
 
 <script>

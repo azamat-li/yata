@@ -1,6 +1,5 @@
 require('./bootstrap');
 
-// Import modules...
 import Vue from 'vue';
 import { App as InertiaApp, plugin as InertiaPlugin } from '@inertiajs/inertia-vue';
 import i18n from "./i18n";
@@ -9,6 +8,7 @@ import PortalVue from 'portal-vue';
 Vue.mixin({ methods: { route } });
 Vue.use(InertiaPlugin);
 Vue.use(PortalVue);
+Vue.use(i18n);
 
 const app = document.getElementById('app');
 

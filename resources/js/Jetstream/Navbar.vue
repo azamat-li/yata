@@ -1,26 +1,19 @@
 <template>
-  <div id="nav" class="rounded-full mb-2">
-    <div v-if="notLoggedIn">
-      <button type="button" class="btn" @click="login">
-        {{ $t("auth.login") }}
-      </button>
-      <button type="button" class="btn" @click="register">
-        {{ $t("auth.register.register") }}
-      </button>
-    </div>
-    <div v-else>
-      <button type="button" class="btn" @click="goToDashboard">
-        {{ $t("dashboard") }}
-      </button>
-      <button type="button" class="logoutButton btn" @click="logout">
-        {{ $t("auth.logout") }}
-      </button>
-    </div>
+  <div id="nav" class="rounded-full">
+		<div class="pl-3 pb-1 flex justify-center items-center">
+			<div>
+				<button type="button" class="btn inline-block" @click="login">Login</button>
+				<button type="button" class="btn inline-block" @click="register">Register</button>
+				<button type="button" class="btn inline-block" @click="goToDashboard">Dashboard</button>
+				<button type="button" class="logoutButton inline-block btn" @click="logout">Logout</button>
+			</div>
+		</div>
   </div>
 </template>
 
 <script>
 import { authComputed } from "../helpers";
+
 export default {
   computed: {
     user() {
@@ -54,7 +47,6 @@ export default {
   display: flex;
   align-items: center;
   min-height: 50px;
-  padding: 0.2em 1em;
   background: radial-gradient(
     circle farthest-corner at 4.7% 14%,
     rgba(48, 225, 152, 1) 0%,

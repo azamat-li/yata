@@ -1,21 +1,21 @@
 <template>
-    <div>
-        <Navbar></Navbar>
+    <div class="bg-gray-600">
+        <Navbar>  </Navbar>
         <slot>  </slot>
         <Foo> </Foo>
     </div>
 </template>
 
 <script>
-import Navbar from '../Jetstream/Navbar'
+import Navbar from '../Jetstream/Navbar.vue'
 import Foo from '../Jetstream/Foo.vue'
 
-    export default {
-        components: {
-            Foo,
-            Navbar
-        }
-    }
+export default {
+		components: {
+				Foo,
+				Navbar
+		}
+}
 </script>
 
 <style lang="scss" scoped>
