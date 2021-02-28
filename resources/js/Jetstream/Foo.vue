@@ -1,6 +1,5 @@
 <template>
   <div class="m-2 p-2  ">
-    <I18nSwitcher> </I18nSwitcher>
   </div>
 </template>
 

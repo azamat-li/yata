@@ -18,3 +18,41 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+
+Cypress.env({
+		user: { 
+  		"name":"test user",
+  		"email":"testuser@gmail.com",
+  		"password":"Fuzkim-samgu9-xyqsaj",
+  		"password_confirmation":"Fuzkim-samgu9-xyqsaj",
+  		"terms":true
+		}
+})
+
+
+Cypress.Commands.add('registerUserIfNeeded', () => {
+		cy.request({
+				method: 'POST',
+				url: 'http://yata.test/register',
+				body: {
+					 ...Cypress.env('user'),
+				},
+		    failOnStatusCode: false
+		})
+})
+
+
+Cypress.Commands.add('loginByForm', () => {
+    cy.request({
+        method: 'POST',
+        url: 'http://yata.test/login',
+        form: true,
+        body: {
+            "email":"aa@aa.com",
+            "password":"uaoeuaoeuoeu",
+            "remember": ""
+        }
+    })
+})
+
