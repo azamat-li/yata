@@ -6,22 +6,21 @@
       :form="form"
       :formIndex="formIndex"
       :indent="getIndent(formIndex)"
-      :isEditable="globalTimetableIsEditable"
+      :isEditable="true"
     >
     </FormWithTimeRow>
     <AddForm />
     <ToggleEditability
-      :editableStateString="editableStateString"
+      :editableStateString="true"
       class="text-left"
     ></ToggleEditability>
   </div>
 </template>
 
 <script lang="ts">
-import { mapState } from 'vuex'
-import FormWithTimeRow from '../Jetstream/FormWithTimeRow.vue'
-import AddForm from '../Jetstream/AddForm.vue'
-import ToggleEditability from '../Jetstream/ToggleEditability.vue'
+import FormWithTimeRow from './FormWithTimeRow.vue'
+import AddForm from './AddForm.vue'
+import ToggleEditability from './ToggleEditability.vue'
 
 export default {
   components: {
@@ -34,7 +33,7 @@ export default {
     return { editableStateString }
   },
   computed: {
-    ...mapState(['globalTimetableIsEditable', 'schoolTimetable'])
+//    ...mapState(['globalTimetableIsEditable', 'schoolTimetable'])
   },
   methods: {
     getIndent(formIndex) {

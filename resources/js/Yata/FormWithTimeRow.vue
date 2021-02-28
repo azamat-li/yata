@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import { mapState, mapActions, mapGetters } from 'vuex'
 import BaseRemove from './BaseRemove.vue'
 export default {
   components: {
@@ -63,13 +62,11 @@ export default {
     computedStyle() {
       return `left: ${this.indent}vw`
     },
-    ...mapState(['schoolTimetable']),
-    ...mapActions(['updateFormName']),
-    ...mapGetters(['getFormById']),
 
-    clickedForm() {
-      return this.getFormById(this.form.id)
-    }
+    // ...mapState(['schoolTimetable']),
+    // ...mapActions(['updateFormName']),
+    // ...mapGetters(['getFormById']),
+    // clickedForm() { return this.getFormById(this.form.id) }
   }
 }
 </script>

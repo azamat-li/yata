@@ -11,7 +11,6 @@
                             <!-- Logo -->
                             <div class="flex-shrink-0 flex items-center">
                                 <inertia-link :href="route('dashboard')">
-                                    <jet-application-mark class="block h-9 w-auto" />
                                 </inertia-link>
                             </div>
 
@@ -220,7 +219,6 @@
 </template>
 
 <script>
-    import JetApplicationMark from '@/Jetstream/ApplicationMark'
     import JetBanner from '@/Jetstream/Banner'
     import JetDropdown from '@/Jetstream/Dropdown'
     import JetDropdownLink from '@/Jetstream/DropdownLink'
@@ -229,7 +227,6 @@
 
     export default {
         components: {
-            JetApplicationMark,
             JetBanner,
             JetDropdown,
             JetDropdownLink,
