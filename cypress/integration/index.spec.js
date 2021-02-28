@@ -1,7 +1,7 @@
 
 context('Index', () => {
   beforeEach(() => {
-    cy.visit('http://yata.test')
+    cy.visit('')
   })
 
   it('Has some meaningful text', () => {
@@ -16,6 +16,14 @@ context('Index', () => {
 		cy.contains('Password')
 	})
 
+  it('can login', () => {
+    cy.get('[data-cy=login]').click()
+    cy.get('[data-cy=email]').type('aa@aa.com')
+    cy.get('[data-cy=password]').type('uaoeuaoeuoeu')
+    cy.get('[data-cy=loginbutton]').click()
+    cy.contains('Dashboard')
+  })
+
   it('Can navigate to register page', () => {
     cy.get('[data-cy=register]').click()
 		cy.contains('Name')
@@ -24,10 +32,15 @@ context('Index', () => {
 		cy.contains('Confirm Password')
 	})
 
-  it('Can navigate to dashboard', () => {
+  it.only('Can navigate to dashboard', () => {
+    cy.get('[data-cy=login]').click()
+    cy.get('[data-cy=email]').type('aa@aa.com')
+    cy.get('[data-cy=password]').type('uaoeuaoeuoeu')
+    cy.get('[data-cy=loginbutton]').click()
+    cy.visit('')
     cy.get('[data-cy=dashboard]').click()
-		cy.contains('All tables')
-		cy.contains('All')
+    cy.contains('Dashboard')
+		cy.contains('All spreadsheets')
 	})
 
 })

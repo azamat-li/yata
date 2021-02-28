@@ -39461,7 +39461,7 @@ var render = function() {
                       "button",
                       {
                         staticClass: "button inline-block",
-                        attrs: { "data-cy": "dashboard", type: "button" }
+                        attrs: { type: "button" }
                       },
                       [
                         _c(
@@ -39470,7 +39470,7 @@ var render = function() {
                             staticClass: "text-sm  nounderline",
                             attrs: {
                               "data-cy": "dashboard",
-                              href: _vm.route("dashboard")
+                              href: "/dashboard"
                             }
                           },
                           [_vm._v("Try")]

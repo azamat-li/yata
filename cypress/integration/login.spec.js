@@ -18,12 +18,12 @@ context('login', () => {
 //	})
 
 
-  it('Can logout', () => {
+  it.skip('Can logout', () => {
     cy.get('[data-cy=logout]').click()
 		cy.contains('You have successfully logged out')
 	})
 
-  it('Can add a spreadsheet', () => {
+  it.skip('Can add a spreadsheet', () => {
     cy.get('[data-cy=add_spreadsheet]').type('sp #0')
     cy.get('[data-cy=add_spreadsheet_button]').click()
     cy.get('[data-cy=add_spreadsheet]').type('sp #2')
@@ -32,7 +32,7 @@ context('login', () => {
 		cy.contains('sp #2')
 	})
 
-  it('Can navigate to spreadsheet', () => {
+  it.skip('Can navigate to spreadsheet', () => {
     cy.get('[type=input]').click()
 		cy.contains('Spreadsheet')
 	})

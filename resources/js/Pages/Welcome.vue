@@ -18,8 +18,8 @@
 				<div class="m-12 py-12 flex justify-center items-center">
 					<div>
 						You may also &nbsp;
-						<button data-cy="dashboard"  type="button" class="button inline-block">
-							<inertia-link data-cy="dashboard" :href="route('dashboard')"   class="text-sm  nounderline">Try</inertia-link>
+						<button   type="button" class="button inline-block">
+							<inertia-link data-cy="dashboard" href="/dashboard"   class="text-sm  nounderline">Try</inertia-link>
 						</button>
 					</div>
 				</div>
