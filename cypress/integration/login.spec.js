@@ -13,12 +13,14 @@ context('login', () => {
   })
 
 
-//  it.only('login by form', () => {
-//    cy.loginByForm()
-//	})
+  it.only('login by form', () => {
+      cy.visit('')
+      cy.requestLogin()
+	})
 
 
   it.skip('Can logout', () => {
+	  cy.visit('')
     cy.get('[data-cy=logout]').click()
 		cy.contains('You have successfully logged out')
 	})

@@ -43,16 +43,20 @@ Cypress.Commands.add('registerUserIfNeeded', () => {
 })
 
 
-Cypress.Commands.add('loginByForm', () => {
+//Cypress.Commands.add('login', () => { })
+
+
+Cypress.Commands.add('requestLogin', () => {
     cy.request({
         method: 'POST',
-        url: 'http://yata.test/login',
+        url: 'login',
         form: true,
         body: {
             "email":"aa@aa.com",
             "password":"uaoeuaoeuoeu",
             "remember": ""
-        }
+        },
+        failOnStatusCode: false
     })
 })
 

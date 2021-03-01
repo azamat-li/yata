@@ -5,7 +5,8 @@ context('Index', () => {
   })
 
   it('Has some meaningful text', () => {
-    cy.contains('Now you may')
+    cy.contains('Yata is Yet Another Trello App')
+    cy.contains('Organize your workflow, planner')
 
 	})
 
@@ -16,7 +17,7 @@ context('Index', () => {
 		cy.contains('Password')
 	})
 
-  it('can login', () => {
+  it.skip('can login', () => {
     cy.get('[data-cy=login]').click()
     cy.get('[data-cy=email]').type('aa@aa.com')
     cy.get('[data-cy=password]').type('uaoeuaoeuoeu')
@@ -24,7 +25,7 @@ context('Index', () => {
     cy.contains('Dashboard')
   })
 
-  it('Can navigate to register page', () => {
+  it.skip('Can navigate to register page', () => {
     cy.get('[data-cy=register]').click()
 		cy.contains('Name')
 		cy.contains('Email')
@@ -32,7 +33,7 @@ context('Index', () => {
 		cy.contains('Confirm Password')
 	})
 
-  it.only('Can navigate to dashboard', () => {
+  it.skip('Can navigate to dashboard', () => {
     cy.get('[data-cy=login]').click()
     cy.get('[data-cy=email]').type('aa@aa.com')
     cy.get('[data-cy=password]').type('uaoeuaoeuoeu')

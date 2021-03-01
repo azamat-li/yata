@@ -30,6 +30,7 @@
                                         <span class="inline-flex rounded-md">
                                             <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition ease-in-out duration-150">
                                                 {{ $page.props.user.current_team.name }}
+
                                             </button>
                                         </span>
                                     </template>
@@ -58,14 +59,17 @@
                                                     Switch Teams
                                                 </div>
 
-                                                <template v-for="team in $page.props.user.all_teams">
-                                                    <form @submit.prevent="switchToTeam(team)" :key="team.id">
+                                                <template>
+                                                <div v-for="team in $page.props.user.all_teams" :key="team.id">
+                                                    <form @submit.prevent="switchToTeam(team)">
                                                         <jet-dropdown-link as="button">
                                                             <div class="flex items-center">
+                                                               
                                                                 <div>{{ team.name }}</div>
                                                             </div>
                                                         </jet-dropdown-link>
                                                     </form>
+                                                </div>
                                                 </template>
                                             </template>
                                         </div>
@@ -84,6 +88,7 @@
                                         <span v-else class="inline-flex rounded-md">
                                             <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
                                                 {{ $page.props.user.name }}
+
                                             </button>
                                         </span>
                                     </template>
@@ -106,8 +111,8 @@
 
                                         <!-- Authentication -->
                                         <form @submit.prevent="logout">
-                                            <jet-dropdown-link as="button">
-                                                Logout
+                                            <jet-dropdown-link data-cy="logout"  as="button">
+                                                Log Out
                                             </jet-dropdown-link>
                                         </form>
                                     </template>
@@ -117,7 +122,8 @@
 
                         <!-- Hamburger -->
                         <div class="-mr-2 flex items-center sm:hidden">
-                            <button @click="showingNavigationDropdown = ! showingNavigationDropdown" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">Options</button>
+                            <button @click="showingNavigationDropdown = ! showingNavigationDropdown" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -155,7 +161,7 @@
                             <!-- Authentication -->
                             <form method="POST" @submit.prevent="logout">
                                 <jet-responsive-nav-link as="button">
-                                    Logout
+                                    Log Out
                                 </jet-responsive-nav-link>
                             </form>
 
@@ -183,15 +189,17 @@
                                     Switch Teams
                                 </div>
 
-                                <template v-for="team in $page.props.user.all_teams">
-                                    <form @submit.prevent="switchToTeam(team)" :key="team.id">
+                                <template>
+                                <div v-for="team in $page.props.user.all_teams" :key="team.id">
+                                    <form @submit.prevent="switchToTeam(team)">
                                         <jet-responsive-nav-link as="button">
                                             <div class="flex items-center">
-                                                <svg v-if="team.id == $page.props.user.current_team_id" class="mr-2 h-5 w-5 text-green-400" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                                
                                                 <div>{{ team.name }}</div>
                                             </div>
                                         </jet-responsive-nav-link>
                                     </form>
+                                </div>
                                 </template>
                             </template>
                         </div>
@@ -210,10 +218,6 @@
             <main>
                 <slot></slot>
             </main>
-
-            <!-- Modal Portal -->
-            <portal-target name="modal" multiple>
-            </portal-target>
         </div>
     </div>
 </template>
@@ -255,3 +259,4 @@
         }
     }
 </script>
+

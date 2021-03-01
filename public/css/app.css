@@ -2109,25 +2109,8 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
 
-div {
-  --text-opacity: 1;
-  color: #edf2f7;
-  color: rgba(237, 242, 247, var(--text-opacity));
-}
-
 .button,
 button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2em;
-  margin: 0.5em;
-  border-radius: 5px;
-  font-size: 1em;
-  color: white;
-  border: none;
-  outline: none;
-  background:   radial-gradient( circle farthest-corner at 4.7% 14%, rgba(48,225,152,1) 0%, rgba(9,123,226,1) 90% );
   margin: 0.5rem;
   padding: 0.5rem;
   display: block;
@@ -2136,15 +2119,8 @@ button {
 }
 
 form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 2em;
   width: 50%;
   min-width: 0;
-  p {
-    color: tomato;
-  }
 }
 
 form,
@@ -2162,22 +2138,8 @@ xl {
   width: 66.666667%;
 }
 
-input {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 2.6em;
-  padding: 0.5em;
-  margin-bottom: 1em;
-  font: 1em 'Avenir', Helvetica, sans-serif;
-}
-
 .input {
   border-radius: 9999px;
-}
-
-h1 {
-  margin-top: 0;
 }
 
 .form {
@@ -16234,6 +16196,126 @@ $text-normal:  text-gray-200;
   background-size: contain;
 }
 
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y;
+}
+
+.bg-repeat-round {
+  background-repeat: round;
+}
+
+.bg-repeat-space {
+  background-repeat: space;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-left-bottom {
+  background-position: left bottom;
+}
+
+.bg-left-top {
+  background-position: left top;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-right-top {
+  background-position: right top;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-opacity-0 {
+  --bg-opacity: 0;
+}
+
+.bg-opacity-25 {
+  --bg-opacity: 0.25;
+}
+
+.bg-opacity-50 {
+  --bg-opacity: 0.5;
+}
+
+.bg-opacity-75 {
+  --bg-opacity: 0.75;
+}
+
+.bg-opacity-100 {
+  --bg-opacity: 1;
+}
+
+.hover\:bg-opacity-0:hover {
+  --bg-opacity: 0;
+}
+
+.hover\:bg-opacity-25:hover {
+  --bg-opacity: 0.25;
+}
+
+.hover\:bg-opacity-50:hover {
+  --bg-opacity: 0.5;
+}
+
+.hover\:bg-opacity-75:hover {
+  --bg-opacity: 0.75;
+}
+
+.hover\:bg-opacity-100:hover {
+  --bg-opacity: 1;
+}
+
+.focus\:bg-opacity-0:focus {
+  --bg-opacity: 0;
+}
+
+.focus\:bg-opacity-25:focus {
+  --bg-opacity: 0.25;
+}
+
+.focus\:bg-opacity-50:focus {
+  --bg-opacity: 0.5;
+}
+
+.focus\:bg-opacity-75:focus {
+  --bg-opacity: 0.75;
+}
+
+.focus\:bg-opacity-100:focus {
+  --bg-opacity: 1;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -23097,126 +23179,6 @@ $text-normal:  text-gray-200;
 
 .focus\:to-pink-900:focus {
   --gradient-to-color: #702459;
-}
-
-.bg-opacity-0 {
-  --bg-opacity: 0;
-}
-
-.bg-opacity-25 {
-  --bg-opacity: 0.25;
-}
-
-.bg-opacity-50 {
-  --bg-opacity: 0.5;
-}
-
-.bg-opacity-75 {
-  --bg-opacity: 0.75;
-}
-
-.bg-opacity-100 {
-  --bg-opacity: 1;
-}
-
-.hover\:bg-opacity-0:hover {
-  --bg-opacity: 0;
-}
-
-.hover\:bg-opacity-25:hover {
-  --bg-opacity: 0.25;
-}
-
-.hover\:bg-opacity-50:hover {
-  --bg-opacity: 0.5;
-}
-
-.hover\:bg-opacity-75:hover {
-  --bg-opacity: 0.75;
-}
-
-.hover\:bg-opacity-100:hover {
-  --bg-opacity: 1;
-}
-
-.focus\:bg-opacity-0:focus {
-  --bg-opacity: 0;
-}
-
-.focus\:bg-opacity-25:focus {
-  --bg-opacity: 0.25;
-}
-
-.focus\:bg-opacity-50:focus {
-  --bg-opacity: 0.5;
-}
-
-.focus\:bg-opacity-75:focus {
-  --bg-opacity: 0.75;
-}
-
-.focus\:bg-opacity-100:focus {
-  --bg-opacity: 1;
-}
-
-.bg-bottom {
-  background-position: bottom;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-left {
-  background-position: left;
-}
-
-.bg-left-bottom {
-  background-position: left bottom;
-}
-
-.bg-left-top {
-  background-position: left top;
-}
-
-.bg-right {
-  background-position: right;
-}
-
-.bg-right-bottom {
-  background-position: right bottom;
-}
-
-.bg-right-top {
-  background-position: right top;
-}
-
-.bg-top {
-  background-position: top;
-}
-
-.bg-repeat {
-  background-repeat: repeat;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
-.bg-repeat-x {
-  background-repeat: repeat-x;
-}
-
-.bg-repeat-y {
-  background-repeat: repeat-y;
-}
-
-.bg-repeat-round {
-  background-repeat: round;
-}
-
-.bg-repeat-space {
-  background-repeat: space;
 }
 
 @media (min-width: 640px) {
@@ -38521,6 +38483,126 @@ $text-normal:  text-gray-200;
     background-size: contain;
   }
 
+  .sm\:bg-repeat {
+    background-repeat: repeat;
+  }
+
+  .sm\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+
+  .sm\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
+
+  .sm\:bg-repeat-y {
+    background-repeat: repeat-y;
+  }
+
+  .sm\:bg-repeat-round {
+    background-repeat: round;
+  }
+
+  .sm\:bg-repeat-space {
+    background-repeat: space;
+  }
+
+  .sm\:bg-bottom {
+    background-position: bottom;
+  }
+
+  .sm\:bg-center {
+    background-position: center;
+  }
+
+  .sm\:bg-left {
+    background-position: left;
+  }
+
+  .sm\:bg-left-bottom {
+    background-position: left bottom;
+  }
+
+  .sm\:bg-left-top {
+    background-position: left top;
+  }
+
+  .sm\:bg-right {
+    background-position: right;
+  }
+
+  .sm\:bg-right-bottom {
+    background-position: right bottom;
+  }
+
+  .sm\:bg-right-top {
+    background-position: right top;
+  }
+
+  .sm\:bg-top {
+    background-position: top;
+  }
+
+  .sm\:bg-opacity-0 {
+    --bg-opacity: 0;
+  }
+
+  .sm\:bg-opacity-25 {
+    --bg-opacity: 0.25;
+  }
+
+  .sm\:bg-opacity-50 {
+    --bg-opacity: 0.5;
+  }
+
+  .sm\:bg-opacity-75 {
+    --bg-opacity: 0.75;
+  }
+
+  .sm\:bg-opacity-100 {
+    --bg-opacity: 1;
+  }
+
+  .sm\:hover\:bg-opacity-0:hover {
+    --bg-opacity: 0;
+  }
+
+  .sm\:hover\:bg-opacity-25:hover {
+    --bg-opacity: 0.25;
+  }
+
+  .sm\:hover\:bg-opacity-50:hover {
+    --bg-opacity: 0.5;
+  }
+
+  .sm\:hover\:bg-opacity-75:hover {
+    --bg-opacity: 0.75;
+  }
+
+  .sm\:hover\:bg-opacity-100:hover {
+    --bg-opacity: 1;
+  }
+
+  .sm\:focus\:bg-opacity-0:focus {
+    --bg-opacity: 0;
+  }
+
+  .sm\:focus\:bg-opacity-25:focus {
+    --bg-opacity: 0.25;
+  }
+
+  .sm\:focus\:bg-opacity-50:focus {
+    --bg-opacity: 0.5;
+  }
+
+  .sm\:focus\:bg-opacity-75:focus {
+    --bg-opacity: 0.75;
+  }
+
+  .sm\:focus\:bg-opacity-100:focus {
+    --bg-opacity: 1;
+  }
+
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -45384,126 +45466,6 @@ $text-normal:  text-gray-200;
 
   .sm\:focus\:to-pink-900:focus {
     --gradient-to-color: #702459;
-  }
-
-  .sm\:bg-opacity-0 {
-    --bg-opacity: 0;
-  }
-
-  .sm\:bg-opacity-25 {
-    --bg-opacity: 0.25;
-  }
-
-  .sm\:bg-opacity-50 {
-    --bg-opacity: 0.5;
-  }
-
-  .sm\:bg-opacity-75 {
-    --bg-opacity: 0.75;
-  }
-
-  .sm\:bg-opacity-100 {
-    --bg-opacity: 1;
-  }
-
-  .sm\:hover\:bg-opacity-0:hover {
-    --bg-opacity: 0;
-  }
-
-  .sm\:hover\:bg-opacity-25:hover {
-    --bg-opacity: 0.25;
-  }
-
-  .sm\:hover\:bg-opacity-50:hover {
-    --bg-opacity: 0.5;
-  }
-
-  .sm\:hover\:bg-opacity-75:hover {
-    --bg-opacity: 0.75;
-  }
-
-  .sm\:hover\:bg-opacity-100:hover {
-    --bg-opacity: 1;
-  }
-
-  .sm\:focus\:bg-opacity-0:focus {
-    --bg-opacity: 0;
-  }
-
-  .sm\:focus\:bg-opacity-25:focus {
-    --bg-opacity: 0.25;
-  }
-
-  .sm\:focus\:bg-opacity-50:focus {
-    --bg-opacity: 0.5;
-  }
-
-  .sm\:focus\:bg-opacity-75:focus {
-    --bg-opacity: 0.75;
-  }
-
-  .sm\:focus\:bg-opacity-100:focus {
-    --bg-opacity: 1;
-  }
-
-  .sm\:bg-bottom {
-    background-position: bottom;
-  }
-
-  .sm\:bg-center {
-    background-position: center;
-  }
-
-  .sm\:bg-left {
-    background-position: left;
-  }
-
-  .sm\:bg-left-bottom {
-    background-position: left bottom;
-  }
-
-  .sm\:bg-left-top {
-    background-position: left top;
-  }
-
-  .sm\:bg-right {
-    background-position: right;
-  }
-
-  .sm\:bg-right-bottom {
-    background-position: right bottom;
-  }
-
-  .sm\:bg-right-top {
-    background-position: right top;
-  }
-
-  .sm\:bg-top {
-    background-position: top;
-  }
-
-  .sm\:bg-repeat {
-    background-repeat: repeat;
-  }
-
-  .sm\:bg-no-repeat {
-    background-repeat: no-repeat;
-  }
-
-  .sm\:bg-repeat-x {
-    background-repeat: repeat-x;
-  }
-
-  .sm\:bg-repeat-y {
-    background-repeat: repeat-y;
-  }
-
-  .sm\:bg-repeat-round {
-    background-repeat: round;
-  }
-
-  .sm\:bg-repeat-space {
-    background-repeat: space;
   }
 }
 
@@ -60809,6 +60771,126 @@ $text-normal:  text-gray-200;
     background-size: contain;
   }
 
+  .md\:bg-repeat {
+    background-repeat: repeat;
+  }
+
+  .md\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+
+  .md\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
+
+  .md\:bg-repeat-y {
+    background-repeat: repeat-y;
+  }
+
+  .md\:bg-repeat-round {
+    background-repeat: round;
+  }
+
+  .md\:bg-repeat-space {
+    background-repeat: space;
+  }
+
+  .md\:bg-bottom {
+    background-position: bottom;
+  }
+
+  .md\:bg-center {
+    background-position: center;
+  }
+
+  .md\:bg-left {
+    background-position: left;
+  }
+
+  .md\:bg-left-bottom {
+    background-position: left bottom;
+  }
+
+  .md\:bg-left-top {
+    background-position: left top;
+  }
+
+  .md\:bg-right {
+    background-position: right;
+  }
+
+  .md\:bg-right-bottom {
+    background-position: right bottom;
+  }
+
+  .md\:bg-right-top {
+    background-position: right top;
+  }
+
+  .md\:bg-top {
+    background-position: top;
+  }
+
+  .md\:bg-opacity-0 {
+    --bg-opacity: 0;
+  }
+
+  .md\:bg-opacity-25 {
+    --bg-opacity: 0.25;
+  }
+
+  .md\:bg-opacity-50 {
+    --bg-opacity: 0.5;
+  }
+
+  .md\:bg-opacity-75 {
+    --bg-opacity: 0.75;
+  }
+
+  .md\:bg-opacity-100 {
+    --bg-opacity: 1;
+  }
+
+  .md\:hover\:bg-opacity-0:hover {
+    --bg-opacity: 0;
+  }
+
+  .md\:hover\:bg-opacity-25:hover {
+    --bg-opacity: 0.25;
+  }
+
+  .md\:hover\:bg-opacity-50:hover {
+    --bg-opacity: 0.5;
+  }
+
+  .md\:hover\:bg-opacity-75:hover {
+    --bg-opacity: 0.75;
+  }
+
+  .md\:hover\:bg-opacity-100:hover {
+    --bg-opacity: 1;
+  }
+
+  .md\:focus\:bg-opacity-0:focus {
+    --bg-opacity: 0;
+  }
+
+  .md\:focus\:bg-opacity-25:focus {
+    --bg-opacity: 0.25;
+  }
+
+  .md\:focus\:bg-opacity-50:focus {
+    --bg-opacity: 0.5;
+  }
+
+  .md\:focus\:bg-opacity-75:focus {
+    --bg-opacity: 0.75;
+  }
+
+  .md\:focus\:bg-opacity-100:focus {
+    --bg-opacity: 1;
+  }
+
   .md\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -67672,126 +67754,6 @@ $text-normal:  text-gray-200;
 
   .md\:focus\:to-pink-900:focus {
     --gradient-to-color: #702459;
-  }
-
-  .md\:bg-opacity-0 {
-    --bg-opacity: 0;
-  }
-
-  .md\:bg-opacity-25 {
-    --bg-opacity: 0.25;
-  }
-
-  .md\:bg-opacity-50 {
-    --bg-opacity: 0.5;
-  }
-
-  .md\:bg-opacity-75 {
-    --bg-opacity: 0.75;
-  }
-
-  .md\:bg-opacity-100 {
-    --bg-opacity: 1;
-  }
-
-  .md\:hover\:bg-opacity-0:hover {
-    --bg-opacity: 0;
-  }
-
-  .md\:hover\:bg-opacity-25:hover {
-    --bg-opacity: 0.25;
-  }
-
-  .md\:hover\:bg-opacity-50:hover {
-    --bg-opacity: 0.5;
-  }
-
-  .md\:hover\:bg-opacity-75:hover {
-    --bg-opacity: 0.75;
-  }
-
-  .md\:hover\:bg-opacity-100:hover {
-    --bg-opacity: 1;
-  }
-
-  .md\:focus\:bg-opacity-0:focus {
-    --bg-opacity: 0;
-  }
-
-  .md\:focus\:bg-opacity-25:focus {
-    --bg-opacity: 0.25;
-  }
-
-  .md\:focus\:bg-opacity-50:focus {
-    --bg-opacity: 0.5;
-  }
-
-  .md\:focus\:bg-opacity-75:focus {
-    --bg-opacity: 0.75;
-  }
-
-  .md\:focus\:bg-opacity-100:focus {
-    --bg-opacity: 1;
-  }
-
-  .md\:bg-bottom {
-    background-position: bottom;
-  }
-
-  .md\:bg-center {
-    background-position: center;
-  }
-
-  .md\:bg-left {
-    background-position: left;
-  }
-
-  .md\:bg-left-bottom {
-    background-position: left bottom;
-  }
-
-  .md\:bg-left-top {
-    background-position: left top;
-  }
-
-  .md\:bg-right {
-    background-position: right;
-  }
-
-  .md\:bg-right-bottom {
-    background-position: right bottom;
-  }
-
-  .md\:bg-right-top {
-    background-position: right top;
-  }
-
-  .md\:bg-top {
-    background-position: top;
-  }
-
-  .md\:bg-repeat {
-    background-repeat: repeat;
-  }
-
-  .md\:bg-no-repeat {
-    background-repeat: no-repeat;
-  }
-
-  .md\:bg-repeat-x {
-    background-repeat: repeat-x;
-  }
-
-  .md\:bg-repeat-y {
-    background-repeat: repeat-y;
-  }
-
-  .md\:bg-repeat-round {
-    background-repeat: round;
-  }
-
-  .md\:bg-repeat-space {
-    background-repeat: space;
   }
 }
 
@@ -83097,6 +83059,126 @@ $text-normal:  text-gray-200;
     background-size: contain;
   }
 
+  .lg\:bg-repeat {
+    background-repeat: repeat;
+  }
+
+  .lg\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+
+  .lg\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
+
+  .lg\:bg-repeat-y {
+    background-repeat: repeat-y;
+  }
+
+  .lg\:bg-repeat-round {
+    background-repeat: round;
+  }
+
+  .lg\:bg-repeat-space {
+    background-repeat: space;
+  }
+
+  .lg\:bg-bottom {
+    background-position: bottom;
+  }
+
+  .lg\:bg-center {
+    background-position: center;
+  }
+
+  .lg\:bg-left {
+    background-position: left;
+  }
+
+  .lg\:bg-left-bottom {
+    background-position: left bottom;
+  }
+
+  .lg\:bg-left-top {
+    background-position: left top;
+  }
+
+  .lg\:bg-right {
+    background-position: right;
+  }
+
+  .lg\:bg-right-bottom {
+    background-position: right bottom;
+  }
+
+  .lg\:bg-right-top {
+    background-position: right top;
+  }
+
+  .lg\:bg-top {
+    background-position: top;
+  }
+
+  .lg\:bg-opacity-0 {
+    --bg-opacity: 0;
+  }
+
+  .lg\:bg-opacity-25 {
+    --bg-opacity: 0.25;
+  }
+
+  .lg\:bg-opacity-50 {
+    --bg-opacity: 0.5;
+  }
+
+  .lg\:bg-opacity-75 {
+    --bg-opacity: 0.75;
+  }
+
+  .lg\:bg-opacity-100 {
+    --bg-opacity: 1;
+  }
+
+  .lg\:hover\:bg-opacity-0:hover {
+    --bg-opacity: 0;
+  }
+
+  .lg\:hover\:bg-opacity-25:hover {
+    --bg-opacity: 0.25;
+  }
+
+  .lg\:hover\:bg-opacity-50:hover {
+    --bg-opacity: 0.5;
+  }
+
+  .lg\:hover\:bg-opacity-75:hover {
+    --bg-opacity: 0.75;
+  }
+
+  .lg\:hover\:bg-opacity-100:hover {
+    --bg-opacity: 1;
+  }
+
+  .lg\:focus\:bg-opacity-0:focus {
+    --bg-opacity: 0;
+  }
+
+  .lg\:focus\:bg-opacity-25:focus {
+    --bg-opacity: 0.25;
+  }
+
+  .lg\:focus\:bg-opacity-50:focus {
+    --bg-opacity: 0.5;
+  }
+
+  .lg\:focus\:bg-opacity-75:focus {
+    --bg-opacity: 0.75;
+  }
+
+  .lg\:focus\:bg-opacity-100:focus {
+    --bg-opacity: 1;
+  }
+
   .lg\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -89960,126 +90042,6 @@ $text-normal:  text-gray-200;
 
   .lg\:focus\:to-pink-900:focus {
     --gradient-to-color: #702459;
-  }
-
-  .lg\:bg-opacity-0 {
-    --bg-opacity: 0;
-  }
-
-  .lg\:bg-opacity-25 {
-    --bg-opacity: 0.25;
-  }
-
-  .lg\:bg-opacity-50 {
-    --bg-opacity: 0.5;
-  }
-
-  .lg\:bg-opacity-75 {
-    --bg-opacity: 0.75;
-  }
-
-  .lg\:bg-opacity-100 {
-    --bg-opacity: 1;
-  }
-
-  .lg\:hover\:bg-opacity-0:hover {
-    --bg-opacity: 0;
-  }
-
-  .lg\:hover\:bg-opacity-25:hover {
-    --bg-opacity: 0.25;
-  }
-
-  .lg\:hover\:bg-opacity-50:hover {
-    --bg-opacity: 0.5;
-  }
-
-  .lg\:hover\:bg-opacity-75:hover {
-    --bg-opacity: 0.75;
-  }
-
-  .lg\:hover\:bg-opacity-100:hover {
-    --bg-opacity: 1;
-  }
-
-  .lg\:focus\:bg-opacity-0:focus {
-    --bg-opacity: 0;
-  }
-
-  .lg\:focus\:bg-opacity-25:focus {
-    --bg-opacity: 0.25;
-  }
-
-  .lg\:focus\:bg-opacity-50:focus {
-    --bg-opacity: 0.5;
-  }
-
-  .lg\:focus\:bg-opacity-75:focus {
-    --bg-opacity: 0.75;
-  }
-
-  .lg\:focus\:bg-opacity-100:focus {
-    --bg-opacity: 1;
-  }
-
-  .lg\:bg-bottom {
-    background-position: bottom;
-  }
-
-  .lg\:bg-center {
-    background-position: center;
-  }
-
-  .lg\:bg-left {
-    background-position: left;
-  }
-
-  .lg\:bg-left-bottom {
-    background-position: left bottom;
-  }
-
-  .lg\:bg-left-top {
-    background-position: left top;
-  }
-
-  .lg\:bg-right {
-    background-position: right;
-  }
-
-  .lg\:bg-right-bottom {
-    background-position: right bottom;
-  }
-
-  .lg\:bg-right-top {
-    background-position: right top;
-  }
-
-  .lg\:bg-top {
-    background-position: top;
-  }
-
-  .lg\:bg-repeat {
-    background-repeat: repeat;
-  }
-
-  .lg\:bg-no-repeat {
-    background-repeat: no-repeat;
-  }
-
-  .lg\:bg-repeat-x {
-    background-repeat: repeat-x;
-  }
-
-  .lg\:bg-repeat-y {
-    background-repeat: repeat-y;
-  }
-
-  .lg\:bg-repeat-round {
-    background-repeat: round;
-  }
-
-  .lg\:bg-repeat-space {
-    background-repeat: space;
   }
 }
 
@@ -105385,6 +105347,126 @@ $text-normal:  text-gray-200;
     background-size: contain;
   }
 
+  .xl\:bg-repeat {
+    background-repeat: repeat;
+  }
+
+  .xl\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+
+  .xl\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
+
+  .xl\:bg-repeat-y {
+    background-repeat: repeat-y;
+  }
+
+  .xl\:bg-repeat-round {
+    background-repeat: round;
+  }
+
+  .xl\:bg-repeat-space {
+    background-repeat: space;
+  }
+
+  .xl\:bg-bottom {
+    background-position: bottom;
+  }
+
+  .xl\:bg-center {
+    background-position: center;
+  }
+
+  .xl\:bg-left {
+    background-position: left;
+  }
+
+  .xl\:bg-left-bottom {
+    background-position: left bottom;
+  }
+
+  .xl\:bg-left-top {
+    background-position: left top;
+  }
+
+  .xl\:bg-right {
+    background-position: right;
+  }
+
+  .xl\:bg-right-bottom {
+    background-position: right bottom;
+  }
+
+  .xl\:bg-right-top {
+    background-position: right top;
+  }
+
+  .xl\:bg-top {
+    background-position: top;
+  }
+
+  .xl\:bg-opacity-0 {
+    --bg-opacity: 0;
+  }
+
+  .xl\:bg-opacity-25 {
+    --bg-opacity: 0.25;
+  }
+
+  .xl\:bg-opacity-50 {
+    --bg-opacity: 0.5;
+  }
+
+  .xl\:bg-opacity-75 {
+    --bg-opacity: 0.75;
+  }
+
+  .xl\:bg-opacity-100 {
+    --bg-opacity: 1;
+  }
+
+  .xl\:hover\:bg-opacity-0:hover {
+    --bg-opacity: 0;
+  }
+
+  .xl\:hover\:bg-opacity-25:hover {
+    --bg-opacity: 0.25;
+  }
+
+  .xl\:hover\:bg-opacity-50:hover {
+    --bg-opacity: 0.5;
+  }
+
+  .xl\:hover\:bg-opacity-75:hover {
+    --bg-opacity: 0.75;
+  }
+
+  .xl\:hover\:bg-opacity-100:hover {
+    --bg-opacity: 1;
+  }
+
+  .xl\:focus\:bg-opacity-0:focus {
+    --bg-opacity: 0;
+  }
+
+  .xl\:focus\:bg-opacity-25:focus {
+    --bg-opacity: 0.25;
+  }
+
+  .xl\:focus\:bg-opacity-50:focus {
+    --bg-opacity: 0.5;
+  }
+
+  .xl\:focus\:bg-opacity-75:focus {
+    --bg-opacity: 0.75;
+  }
+
+  .xl\:focus\:bg-opacity-100:focus {
+    --bg-opacity: 1;
+  }
+
   .xl\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -112248,126 +112330,6 @@ $text-normal:  text-gray-200;
 
   .xl\:focus\:to-pink-900:focus {
     --gradient-to-color: #702459;
-  }
-
-  .xl\:bg-opacity-0 {
-    --bg-opacity: 0;
-  }
-
-  .xl\:bg-opacity-25 {
-    --bg-opacity: 0.25;
-  }
-
-  .xl\:bg-opacity-50 {
-    --bg-opacity: 0.5;
-  }
-
-  .xl\:bg-opacity-75 {
-    --bg-opacity: 0.75;
-  }
-
-  .xl\:bg-opacity-100 {
-    --bg-opacity: 1;
-  }
-
-  .xl\:hover\:bg-opacity-0:hover {
-    --bg-opacity: 0;
-  }
-
-  .xl\:hover\:bg-opacity-25:hover {
-    --bg-opacity: 0.25;
-  }
-
-  .xl\:hover\:bg-opacity-50:hover {
-    --bg-opacity: 0.5;
-  }
-
-  .xl\:hover\:bg-opacity-75:hover {
-    --bg-opacity: 0.75;
-  }
-
-  .xl\:hover\:bg-opacity-100:hover {
-    --bg-opacity: 1;
-  }
-
-  .xl\:focus\:bg-opacity-0:focus {
-    --bg-opacity: 0;
-  }
-
-  .xl\:focus\:bg-opacity-25:focus {
-    --bg-opacity: 0.25;
-  }
-
-  .xl\:focus\:bg-opacity-50:focus {
-    --bg-opacity: 0.5;
-  }
-
-  .xl\:focus\:bg-opacity-75:focus {
-    --bg-opacity: 0.75;
-  }
-
-  .xl\:focus\:bg-opacity-100:focus {
-    --bg-opacity: 1;
-  }
-
-  .xl\:bg-bottom {
-    background-position: bottom;
-  }
-
-  .xl\:bg-center {
-    background-position: center;
-  }
-
-  .xl\:bg-left {
-    background-position: left;
-  }
-
-  .xl\:bg-left-bottom {
-    background-position: left bottom;
-  }
-
-  .xl\:bg-left-top {
-    background-position: left top;
-  }
-
-  .xl\:bg-right {
-    background-position: right;
-  }
-
-  .xl\:bg-right-bottom {
-    background-position: right bottom;
-  }
-
-  .xl\:bg-right-top {
-    background-position: right top;
-  }
-
-  .xl\:bg-top {
-    background-position: top;
-  }
-
-  .xl\:bg-repeat {
-    background-repeat: repeat;
-  }
-
-  .xl\:bg-no-repeat {
-    background-repeat: no-repeat;
-  }
-
-  .xl\:bg-repeat-x {
-    background-repeat: repeat-x;
-  }
-
-  .xl\:bg-repeat-y {
-    background-repeat: repeat-y;
-  }
-
-  .xl\:bg-repeat-round {
-    background-repeat: round;
-  }
-
-  .xl\:bg-repeat-space {
-    background-repeat: space;
   }
 }
 
