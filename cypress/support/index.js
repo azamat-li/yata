@@ -49,8 +49,7 @@ Cypress.Commands.add('registerUserIfNeeded', () => {
 Cypress.Commands.add('requestLogin', () => {
     cy.request({
         method: 'POST',
-        url: 'login',
-        form: true,
+        url: '/login',
         body: {
             "email":"aa@aa.com",
             "password":"uaoeuaoeuoeu",
@@ -58,5 +57,23 @@ Cypress.Commands.add('requestLogin', () => {
         },
         failOnStatusCode: false
     })
+})
+
+
+Cypress.Commands.add('requestRegister', () => {
+    cy.request({
+        method: 'POST',
+        url: '/register',
+        form: true,
+        body: {
+            "name":"testuser",
+            "email":"aa@aa.com",
+            "password":"uaoeuaoeuoeu",
+            "password_confirmation":"uaoeuaoeuoeu",
+            "terms":false
+        },
+        failOnStatusCode: false
+    })
+
 })
 
