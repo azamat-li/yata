@@ -34431,6 +34431,7 @@ var render = function() {
       _c(
         "form",
         {
+          attrs: { "data-cy": "form" },
           on: {
             submit: function($event) {
               $event.preventDefault()
@@ -34634,7 +34635,7 @@ var render = function() {
                 {
                   staticClass: "ml-4",
                   class: { "opacity-25": _vm.form.processing },
-                  attrs: { disabled: _vm.form.processing }
+                  attrs: { "data-cy": "submit", disabled: _vm.form.processing }
                 },
                 [_vm._v("\n                Register now\n            ")]
               )
@@ -36594,7 +36595,7 @@ var render = function() {
                     "inertia-link",
                     {
                       staticClass: "text-sm text-gray-700 underline",
-                      attrs: { href: "/dashboard" }
+                      attrs: { "data-cy": "dashboard", href: "/dashboard" }
                     },
                     [_vm._v("\n            Dashboard\n        ")]
                   )
@@ -36603,7 +36604,7 @@ var render = function() {
                       "inertia-link",
                       {
                         staticClass: "text-sm text-gray-700 underline",
-                        attrs: { href: _vm.route("login") }
+                        attrs: { "data-cy": "login", href: _vm.route("login") }
                       },
                       [_vm._v("\n                Log in\n            ")]
                     ),
@@ -36613,7 +36614,10 @@ var render = function() {
                           "inertia-link",
                           {
                             staticClass: "ml-4 text-sm text-gray-700 underline",
-                            attrs: { href: _vm.route("register") }
+                            attrs: {
+                              "data-cy": "register",
+                              href: _vm.route("register")
+                            }
                           },
                           [_vm._v("\n                Register\n            ")]
                         )
