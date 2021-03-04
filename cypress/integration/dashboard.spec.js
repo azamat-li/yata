@@ -1,5 +1,5 @@
 
-context('Index', () => {
+context('Dashboard', () => {
   beforeEach(() => {
     cy.visit('/login')
     cy.get('[data-cy=email]').type('aa@aa.com')
@@ -10,11 +10,11 @@ context('Index', () => {
   it('Has some meaningful text', () => {
     cy.contains('Dashboard')
     cy.contains('See your data, organizer!')
-	})
+  })
 
   it.skip('see spreadsheets', () => {
 		cy.contains('Your spreadsheets,')
-	})
+  })
 
   it.skip('can login', () => {
     cy.get('[data-cy=login]').click()

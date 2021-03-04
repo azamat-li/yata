@@ -4,6 +4,9 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dashboard
             </h2>
+            <h4>
+                See your data, organizer! 
+            </h4>
         </template>
 
         <div class="py-12">
