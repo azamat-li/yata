@@ -4999,6 +4999,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -35122,7 +35125,11 @@ var render = function() {
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
                 [_vm._v("\n            Dashboard\n        ")]
-              )
+              ),
+              _vm._v(" "),
+              _c("h4", [
+                _vm._v("\n            See your data, organizer! \n        ")
+              ])
             ]
           },
           proxy: true

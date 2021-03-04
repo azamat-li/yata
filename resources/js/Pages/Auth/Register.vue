@@ -6,7 +6,7 @@
 
         <jet-validation-errors class="mb-4" />
 
-        <form @submit.prevent="submit">
+        <form @submit.prevent="submit"  data-cy="form">
             <div data-cy="name">
                 <jet-label for="name" value="Name" />
                 <jet-input  id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
@@ -44,7 +44,7 @@
                     Are you already registered?
                 </inertia-link>
 
-                <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <jet-button data-cy="submit" class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Register now
                 </jet-button>
             </div>

@@ -13,10 +13,11 @@ context('login', () => {
   })
 
 
-  it.only('login by form', () => {
+  it.skip('login by form', () => {
       cy.visit('')
       cy.requestLogin()
-	})
+      cy.contains('Dashboard')
+  })
 
 
   it.skip('Can logout', () => {

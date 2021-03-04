@@ -8,20 +8,20 @@ context('Index', () => {
     cy.contains('Yata is Yet Another Trello App')
     cy.contains('Organize your workflow, planner')
 
-	})
+  })
 
 
   it('Can navigate to login page', () => {
     cy.get('[data-cy=login]').click()
-		cy.contains('Email')
-		cy.contains('Password')
-	})
+    cy.contains('Email')
+    cy.contains('Password')
+    cy.contains('Forgot your password?')
+  })
 
-  it.skip('can login', () => {
-    cy.get('[data-cy=login]').click()
-    cy.get('[data-cy=email]').type('aa@aa.com')
-    cy.get('[data-cy=password]').type('uaoeuaoeuoeu')
-    cy.get('[data-cy=loginbutton]').click()
+  it.only('can login and access dashboard', () => {
+    cy.requestLogin()
+    cy.visit('')
+    cy.get('[data-cy=dashboard]').click()
     cy.contains('Dashboard')
   })
 
@@ -31,7 +31,7 @@ context('Index', () => {
 		cy.contains('Email')
 		cy.contains('Password')
 		cy.contains('Confirm Password')
-	})
+  })
 
   it.skip('Can navigate to dashboard', () => {
     cy.get('[data-cy=login]').click()
@@ -41,7 +41,7 @@ context('Index', () => {
     cy.visit('')
     cy.get('[data-cy=dashboard]').click()
     cy.contains('Dashboard')
-		cy.contains('All spreadsheets')
-	})
+		cy.contains('All spreadsheets')  	
+  })
 
 })
